@@ -1,0 +1,58 @@
+@import "componentes/bootstrap_reboot";
+@import "componentes/globales.scss";
+@import "componentes/perfiles.scss";
+@import "componentes/estadisticas.scss";
+@import "componentes/ubicaciones.scss";
+@import "componentes/galerias.scss";
+@import "componentes/articulos.scss";
+@import "componentes/intros.scss";
+@import "componentes/cajas.scss";
+@import "componentes/buscadores.scss";
+@import "componentes/filtros.scss";
+@import "componentes/headers.scss";
+@import "componentes/footers.scss";
+@import "componentes/homepages.scss";
+@import "componentes/grids.scss";
+
+
+@media (prefers-color-scheme: dark) {
+    .perfil {
+        color: $color-secundario;
+        background-color: $color-claro;
+        &__titulo {
+            color: get-opacity($color-variacion, 0.7);
+        }
+        &__boton {
+            color: $color-claro;
+            background-color: $color-primario;
+        }
+    }
+    .articulos {
+        background-color: $color-primario;
+        color: $color-claro;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $color-primario;
+        color: $color-claro;
+    }
+    .intro {
+        background-color: $color-secundario;
+    }
+    .articulo--principal h2 {
+        color: $color-secundario;
+    }
+    .caja {
+        &__contenido {
+            background-color: $color-secundario;
+        }
+        span {
+            color: $color-claro;
+        }
+        a {
+            color: $color-claro;
+        }
+    }
+}

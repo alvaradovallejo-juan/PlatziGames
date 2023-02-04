@@ -1,0 +1,43 @@
+.contenedor--cajas {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caja {
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    @include caja;
+    img {
+        border-radius: 10px 10px 0 0;
+    }
+    &__contenido {
+        border-radius: 10px;
+        padding: 20px;
+        background-color: $color-claro;
+    }
+    &__categoria {
+        color: $color-secundario;
+        @include titulos($fuente2);
+    }
+}
+
+.contenedor--cajas .caja img {
+	max-width: 400px;
+}
+
+.contenedor--cajas .caja a {
+	text-decoration: none;	
+	color: $color-variacion;
+	@include titulos($fuente2);
+}
+
+.contenido {
+	justify-content: space-evenly;
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0;
+} 
