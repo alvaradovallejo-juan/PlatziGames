@@ -14,9 +14,10 @@
         border-radius: 10px 10px 0 0;
     }
     &__contenido {
-        border-radius: 10px;
         padding: 20px;
         background-color: $color-claro;
+        border-radius: 10px;
+        min-height: 250px;
     }
     &__categoria {
         color: $color-secundario;
@@ -50,8 +51,8 @@
 	background-color: $color-primario;
 	img {
 		display: block;
-        max-width: 100%;
-		max-height: fit-content;
+		max-width: 100%;
+        height: auto;
 		position: absolute;
 		opacity: 0.5;
 		object-fit: contain;

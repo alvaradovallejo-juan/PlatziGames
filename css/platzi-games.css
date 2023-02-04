@@ -600,7 +600,7 @@ main {
 }
 .estadistica--articulos ul li {
   list-style: none;
-  color: rgba(51, 51, 51, 0.4);
+  color: #858585;
 }
 .estadistica--articulos ul span {
   margin-left: 10px;
@@ -790,6 +790,8 @@ main {
 }
 .intro__titulo {
   font-size: 50px;
+  font-size: 3.125rem;
+  line-height: 4.6875rem;
 }
 .intro__autor {
   width: 150px;
@@ -840,9 +842,10 @@ main {
   border-radius: 10px 10px 0 0;
 }
 .caja__contenido {
-  border-radius: 10px;
   padding: 20px;
   background-color: #fff;
+  border-radius: 10px;
+  min-height: 250px;
 }
 .caja__categoria {
   color: #8841DA;
@@ -886,9 +889,7 @@ main {
 .caja--con-fondo img {
   display: block;
   max-width: 100%;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  height: auto;
   position: absolute;
   opacity: 0.5;
   -o-object-fit: contain;
@@ -1279,4 +1280,72 @@ main {
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 30px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333333;
+    color: #fff;
+  }
+  .header--principal {
+    border-bottom: none;
+  }
+  .nav--header ul a {
+    color: #fff;
+  }
+  .header__busqueda span {
+    color: #fff;
+  }
+  .sidebar--listado h3 {
+    color: #fff;
+  }
+  .sidebar--listado a {
+    color: #fff;
+  }
+  .sidebar--listado__numero {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .intro {
+    background-color: #8841DA;
+  }
+  .articulo--principal h2 {
+    color: #8841DA;
+  }
+  .caja__contenido {
+    background-color: #8841DA;
+    color: #fff;
+  }
+  .caja span {
+    color: #022179;
+  }
+  .caja a {
+    color: #333333;
+  }
+  .perfil {
+    color: #8841DA;
+    background-color: #fff;
+  }
+  .perfil__titulo, .perfil__minibio h3 {
+    color: rgba(63, 87, 154, 0.7);
+  }
+  .perfil__boton {
+    color: #fff;
+    background-color: #333333;
+  }
+  .articulos {
+    background-color: #333333;
+    color: #fff;
+  }
+  .estadistica--articulos {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .estadistica--articulos ul span {
+    color: #fff;
+  }
+  .encabezado--con-filtros .filtros span {
+    color: #fff;
+  }
+  .encabezado--con-filtros .filtros a {
+    color: #fff;
+  }
 }

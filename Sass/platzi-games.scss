@@ -18,44 +18,76 @@
 @import "componentes/banners.scss";
 
 
-// @media (prefers-color-scheme: dark) {
-//     .perfil {
-//         color: $color-secundario;
-//         background-color: $color-claro;
-//         &__titulo {
-//             color: get-opacity($color-variacion, 0.7);
-//         }
-//         &__boton {
-//             color: $color-claro;
-//             background-color: $color-primario;
-//         }
-//     }
-//     .articulos {
-//         background-color: $color-primario;
-//         color: $color-claro;
-//     }
-// }
-
-// @media (prefers-color-scheme: dark) {
-//     body {
-//         background-color: $color-primario;
-//         color: $color-claro;
-//     }
-//     .intro {
-//         background-color: $color-secundario;
-//     }
-//     .articulo--principal h2 {
-//         color: $color-secundario;
-//     }
-//     .caja {
-//         &__contenido {
-//             background-color: $color-secundario;
-//         }
-//         span {
-//             color: $color-claro;
-//         }
-//         a {
-//             color: $color-claro;
-//         }
-//     }
-// }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $color-primario;
+        color: $color-claro;
+    }
+    .header--principal {
+        border-bottom: none;
+    }
+    .nav--header ul a {
+            color: $color-claro;
+    }
+    .header__busqueda span {
+            color: $color-claro;
+    }
+    .sidebar--listado {
+        h3 {
+            color: $color-claro;
+        }
+        a {
+            color: $color-claro;
+        }
+        &__numero {
+            color: get-opacity($color-claro, 0.5);
+        }
+    }
+    .intro {
+        background-color: $color-secundario;
+    }
+    .articulo--principal h2 {
+        color: $color-secundario;
+    }
+    .caja {
+        &__contenido {
+            background-color: $color-secundario;
+            color: $color-claro;
+        }
+        span {
+            color: #022179;
+        }
+        a {
+            color: $color-primario;
+        }
+    }
+    .perfil {
+        color: $color-secundario;
+        background-color: $color-claro;
+        &__titulo {
+            color: get-opacity($color-variacion, 0.7);
+        }
+        &__boton {
+            color: $color-claro;
+            background-color: $color-primario;
+        }
+    }
+    .articulos {
+        background-color: $color-primario;
+        color: $color-claro;
+    }
+    .estadistica--articulos {
+        border-top: 1px solid get-opacity($color-claro, .20);
+        ul span {
+            color: $color-claro;
+        }
+    }
+    .encabezado--con-filtros .filtros {
+        span {
+            color: $color-claro;
+        }
+        a {
+            color: $color-claro;
+        }
+    }
+}
